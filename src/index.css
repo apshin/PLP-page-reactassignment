@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(97, 97, 97);
+}
+
+li {
+  list-style: none;
+}
+
+.btns {
+  padding: 10px 20px;
+  margin-right: 6px;
+  background: transparent;
+  border: none;
+  border: 0.6px solid #ccc;
+  border-radius: 5px;
+  color: #323232;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.product-ratings {
+  font-size: 10px;
+  text-align: right;
+}
+
+.product-name,
+.category-name,
+.price,
+.brand-name {
+  font-size: 14px;
+
+  .product-name-title {
+    color: black;
+  }
+}
+
+.total-reviews {
+  vertical-align: text-top;
+}
+
+.image-container {
+  position: relative;
+
+  svg {
+    right: 10px;
+    position: absolute;
+    top: 10px;
+    margin: 0px;
+    width: 15px;
+  }
+}
+
+.container {
+  max-width: 1400px;
+}
+
+.filters {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.radio-label {
+  display: inline-block;
+  position: relative;
+  padding-left: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.radio-span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px; 
+}
+
+.radio-label::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+input[type="radio"]:checked + .radio-label::before {
+  background-color: darkgray;
+}
+
+.category-filter,
+.price-filter,
+.rating-filter {
+  display: flex;
+  flex-direction: column;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination li.active a {
+  background-color: lightgray;
+  color: black;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.pagination li a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.pagination li a:hover {
+  background-color: lightgray;
+  color: #fff;
+}
+
+.product-detail {
+  img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.pdp-details {
+  border: 1px solid lightgray;
+  padding: 20px;
+  background-color: #eaeaea;
+}
+
+.filter-btn {
+  border: none;
+  background: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+footer {
+  border: 1px solid #eaeaea;
+  padding: 10px;
+  background: lightgray;
+  font-weight: 700;
+  text-align: center;
+}

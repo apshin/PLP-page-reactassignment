@@ -1,0 +1,121 @@
+.product-details {
+  .product-tile {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px  solid #eaeaea;
+    border-radius: 20px;
+    margin-top: 20px;
+
+    &:nth-child(even) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+  .product-tile {
+    &:nth-child(even) {
+      padding-left: 10px; /* Add margin left for even-numbered elements */
+    }
+
+    margin-bottom: 50px;
+    border: 1px  solid #eaeaea;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 0.6s ease;
+    }
+
+    .product-name {
+      min-height: 50px;
+    }
+
+    .image-container {
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)); /* Adjust the gradient as needed */
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      &:hover::before {
+        opacity: 1;
+      }
+
+      &:hover img {
+        transform: scale(1.1); /* Adjust the scale factor for hover effect */
+      }
+
+      img {
+        width: 100%;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
+      }
+
+      svg {
+        width: 15px;
+
+        @media (min-width: 1024px) {
+          width: 20px;
+        }
+      }
+    }
+
+    .tile-body {
+      min-height: 50px;
+    }
+  }
+
+  .cart-btn {
+    margin: 20px 0;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    height: 3.5rem;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #000;
+    color: #fff;
+
+    &:hover {
+      color: black;
+      background: white;
+      border: 1px solid #000;
+    }
+
+    .btn-label {
+      padding-right: 5px;
+      text-transform: uppercase;
+    }
+
+    del {
+      padding-right: 5px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 16px;
+      font-weight: normal;
+
+      .btn-label {
+        padding-right: 10px;
+      }
+
+      del {
+        padding-right: 10px;
+      }
+    }
+  }

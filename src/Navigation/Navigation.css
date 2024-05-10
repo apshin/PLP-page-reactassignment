@@ -1,0 +1,49 @@
+nav {
+  display: flex;
+  border-bottom: 2px solid #f3f3f3;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  z-index: 999;
+  margin-left: 2rem;
+}
+
+input {
+  padding: 12px 20px;
+  border: none;
+  background: #f7f6f6;
+  outline: none;
+  margin-right: 20px;
+  border-radius: 5px;
+  position: relative;
+  width: 14rem;
+}
+
+.nav-icons {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 2rem;
+  color: black;
+}
+
+.user-profile {
+  display: flex;
+}
+
+.logo {
+  .logo-heading {
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 13px;
+  }
+  .logo-icon {
+    margin: 0 20px;
+  }
+
+  .logo-name {
+    font-style: oblique;
+    font-weight: 100;
+    font-size: 15px;
+    text-align: center;
+  }
+}
